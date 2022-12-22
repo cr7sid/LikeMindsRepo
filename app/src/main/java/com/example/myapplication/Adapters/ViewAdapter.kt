@@ -30,6 +30,7 @@ class ViewAdapter : RecyclerView.Adapter<ViewAdapter.ViewHolder>() {
 
     fun addItems(list: MutableList<Meaning>?) {
         if (list != null) {
+            this.meanings.clear()
             this.meanings.addAll(list)
         }
         notifyDataSetChanged()
